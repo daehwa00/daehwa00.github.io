@@ -47,7 +47,9 @@ causal attention을 통해 action을 선택합니다.
 # 1 Introduction
 
 <br/><br/>
+
 정말 유명한 논문이죠.
+{:.notice--primary}
 
 ML을 다루시는 분들은 필수로 알아야만 하는 [attention is all you need](https://arxiv.org/pdf/1706.03762.pdf) 논문을 필두로,
 
@@ -115,9 +117,8 @@ autoregressive generative modeling을 통해 policy sampling을 줄일 수 있�
 
 <br/><br/><br/>
 연구자들의 연구의 직관을 얻기 위해 방향 그래프에서 가장 짧은 길을 찾는 task를 고려해보자고 합니다.
-{:refdef: style="text-align: center;"}
-![Bar](/assets/img/DT_figure2.png)  
-{: refdef}
+
+![Bar](/assets/img/DT_figure2.png){: .align-center}
 
 0은 agent가 goal에 도달했을 때 주어지는 reward이며, -1은 agent가 goal에 도달하지 못했을 때 주어지는 reward입니다.
 
