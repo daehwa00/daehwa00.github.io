@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Proximal Policy Optimization(PPO) Algorithms"
+date: 2022-12-26 15:23:59 +0900
+categories: RL ML
+tags: [PPO, TRPO, ICRL]
+use_math: true
+---
+
+2017년에 [Proximal Policy Optimization Algorithms](https://arxiv.org/pdf/1707.06347.pdf)을 읽고 **제대로** 정리한 글입니다.
