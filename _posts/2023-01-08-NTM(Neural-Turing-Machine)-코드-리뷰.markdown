@@ -3,7 +3,7 @@ title: "NTM(Neural-Turing-Machine) 코드 리뷰"
 excerpt: "NTM의 자세한 구조를 코드를 통해 알아보자."
 
 categories:
-  - Meta-Learning
+  - Meta Learning
 tags:
   - [meta learning, meta, ML, NTM, Neural Turing Machine]
 use_math: true

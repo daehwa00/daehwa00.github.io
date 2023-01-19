@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Meta-Learning이란?(2/2)"
-
+excerpt: "먼저 메타러닝을 공부하기 전 지도학습의 task를 정의해봅시다."
 categories:
   - Meta-Learning
 tags:

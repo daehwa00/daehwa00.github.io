@@ -11,7 +11,7 @@
             📂 <span>전체 글 수</style> <span>{{sum}}</style> <span>개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">ML(머신러닝)#</span>
+        <span class="nav__sub-title">ML(머신러닝)</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "RL" %}
@@ -23,6 +23,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "AutoML" %}
                         <li><a href="/categories/AutoML" class="">AutoML ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Meta Learning" %}
+                        <li><a href="/categories/Meta-Learning" class="">Meta Learning ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

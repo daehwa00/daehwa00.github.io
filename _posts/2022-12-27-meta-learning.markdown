@@ -3,7 +3,7 @@ title: "Meta-Learning이란?(1/2)"
 excerpt: "메타러닝이 정확히 어떤 것인지 알아보자"
 
 categories:
-  - Meta-Learning
+  - Meta Learning
 tags:
   - [Meta-Learning, ML, Machine Learning, Deep Learning]
 use_th: true
