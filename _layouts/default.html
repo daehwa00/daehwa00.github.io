@@ -10,7 +10,9 @@
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
-    
+    {% if page.use_math %}
+      {% include mathjax_support.html %}
+    {% endif %}
     {% include head.html %}
     {% include head/custom.html %}
         <!-- 스크롤바 커스터마이징 -->
@@ -23,7 +25,7 @@
       {
           width:12px;height:12px;background:transparent;}
       }
-      
+
     </style>
   </head>
 

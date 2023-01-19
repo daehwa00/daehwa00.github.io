@@ -23,7 +23,6 @@ import torch.nn as nn
 from typing import Tuple
 
 
-
 ```python
 class LSTMController(nn.Module):
     def __init__(self, input_size: int, hidden_size: int) -> None:
