@@ -1,38 +1,28 @@
 ---
-layout: post
 title: "NTM(Neural-Turing-Machine) 코드 리뷰"
-date: 2023-01-08 15:23:59 +0900
-categories: ML AutoML
-tags: [Sweep, Sweeps, weight, weights, bias, biases, weights and biases, wandb]
-use_math: true
----
+excerpt: "NTM의 자세한 구조를 코드를 통해 알아보자."
 
-NTM의 자세한 구조를 코드를 통해 알아보자.
+categories:
+  - Meta-Learning
+tags:
+  - [meta learning, meta, ML, NTM, Neural Turing Machine]
+use_math: true
+
+toc: true
+toc_sticky: true
+
+date: 2023-01-08
+last_modified_at: 2023-01-08
+---
 
 ![image](/assets/img/NTM_1.png)
 
-```python
+````python
 import torch
 import torch.nn as nn
 from typing import Tuple
 
-class Memory(nn.Module):
-    def __init__(self, size):   # size = (N, M), N = 메모리 크기, M = 메모리 벡터의 크기
-        super(Memory, self).__init__()
-        self.size = size
-        initial_state = torch.ones(self.size) * 1e-6
-        self.register_buffer('initial_state', initial_state.data)
-        self.initial_read = nn.Parameter(torch.randn(1, self.size[1])* 0.01)
 
-    def reset(self, batch_size):
-        self.matrix = self.initial_state.repeat(batch_size, 1, 1)   # (B, N, M)
-
-    def get_initial_read(self, batch_size):
-        return self.initial_read.repeat(batch_size, 1)  # (B, M)
-
-    def write(self, w, e, a):
-        self.matrix = self.matrix * (1 - torch.matmul(w.unsqueeze(-1), e.unsqueeze(1))) + torch.matmul(w.unsqueeze(-1), a.unsqueeze(1))
-```
 
 ```python
 class LSTMController(nn.Module):
@@ -57,9 +47,11 @@ class LSTMController(nn.Module):
     def forward(self, x, state):
         output, state = self.layer(x.unsqueeze(0), state)
         return output.squeeze(0), state # 입력된 x와 state에 대한 다음 state를 반환
-```
+````
 
-LSTM의 특징은 입력과 **이전 state**를 받아서 다음 state를 반환한다는 것입니다. 이를 이용하여 controller를 구현해주었습니다.
+LSTM의 특징은 입력과 **이전 state**를 받아서 다음 state를 반환한다는 것이다.
+
+이를 이용하여 controller를 구현해주었다.
 
 ```python
 self.layer = nn.LSTM(input_size=input_size, hidden_size=hidden_size)
