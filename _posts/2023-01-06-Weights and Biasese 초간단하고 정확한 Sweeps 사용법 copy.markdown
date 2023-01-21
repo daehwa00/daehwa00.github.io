@@ -1,10 +1,18 @@
 ---
-layout: post
 title: "Weights and Biasese 초간단하고 정확한 Sweeps 사용법"
-date: 2023-01-06 15:23:59 +0900
-categories: ML AutoML
-tags: [Sweep, Sweeps, weight, weights, bias, biases, weights and biases, wandb]
+excerpt: "Weights and Biasese의 Sweeps을 사용해보자"
+
+categories:
+  - AutoML
+tags:
+  - [Sweep, Sweeps, weight, weights, bias, biases, weights and biases, wandb]
 use_math: true
+
+toc: true
+toc_sticky: true
+
+date: 2023-01-06
+last_modified_at: 2023-01-06
 ---
 
 한 두달 전에 [Weights and Biases](https://wandb.ai/site)의 Sweeps을 사용할 일이 있었는데,

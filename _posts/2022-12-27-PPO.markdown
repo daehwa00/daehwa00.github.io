@@ -1,6 +1,5 @@
 ---
-layout: post
-title: "Proximal Policy Optimization(PPO) Algorithms"
+tite: "Proximal Policy Optimization(PPO) Algorithms"
 date: 2022-12-26 15:23:59 +0900
 categories: RL ML
 tags: [PPO, TRPO, ICRL]

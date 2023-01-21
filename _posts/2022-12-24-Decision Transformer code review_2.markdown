@@ -1,13 +1,19 @@
 ---
-layout: post
 title: "Decision Transformer code review(2/2)"
-date: 2022-12-21 15:23:59 +0900
-categories: RL ML
-tags: [Decision, Transformer, pytorch]
-use_math: true
----
+excerpt: "본격적으로 Decision Transformer의 코드를 살펴봅시다."
 
-본격적으로 Decision Transformer의 코드를 살펴봅시다.
+categories:
+  - RL
+tags:
+  - [Decision, Transformer, pytorch, RL, ML, code review]
+use_math: true
+
+toc: true
+toc_sticky: true
+
+date: 2022-12-21
+last_modified_at: 2022-12-21
+---
 
 ```python
 class DecisionTransformer(nn.Module):

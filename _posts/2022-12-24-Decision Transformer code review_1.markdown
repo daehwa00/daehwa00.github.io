@@ -1,10 +1,17 @@
 ---
-layout: post
 title: "Decision Transformer code review(1/2)"
-date: 2022-12-21 15:23:59 +0900
-categories: RL ML
-tags: [Decision, Transformer, pytorch]
+excerpt: "Decision Transformer의 구조와 학습 과정을 코드 리뷰로 살펴봅니다."
+categories:
+  - RL
+tags:
+  - [Decision, Transformer, pytorch, RL, ML, code review]
 use_math: true
+
+toc: true
+toc_sticky: true
+
+date: 2022-12-21
+last_modified_at: 2022-12-21
 ---
 
 이 code review는 다음 [colab code](https://colab.research.google.com/github/nikhilbarhate99/min-decision-transformer/blob/master/min_decision_transformer.ipynb#scrollTo=3uycTGiqjKYK)를 기반으로 합니다.

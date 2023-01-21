@@ -1,10 +1,18 @@
 ---
-layout: post
 title: "모델 기반 메타러닝(NTM, MANN, SNAIL)"
-date: 2022-12-27 18:23:59 +0900
-categories: RL ML Meta-Learning
-tags: [Meta-Learning, ML, Machine Learning, Deep Learning]
+
+categories:
+  - Meta Learning
+tags:
+  - [Meta-Learning, ML, Machine Learning, Deep Learning]
+
+toc: true
+toc_sticky: true
+
 use_math: true
+
+date: 2022-12-27
+last_modified_at: 2022-12-27
 ---
 
 본 포스트는 LSTM에 대한 사전 지식을 필요로 합니다.
@@ -22,4 +30,3 @@ LSTM같은 순환 신경망은 일종의 메모리 역할을 하며,
 이를 통해 아! LSTM을 통해 많은 task들을 학습하는 것이 이 정보를 기억하는구나! 라고 해석할 수 있습니다.
 
 ## 1. Neural Turing Machine(NTM)
-
